@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(5, 107, 99);
+    font-family: 'Roboto' , sans-serif ;
+    animation: backcolor 10s linear infinite;
+    
+}
+
+::selection{
+    color: rgb(8, 8, 8);
+    background-color: rgb(41, 255, 166);
+}
+
+.container{
+          max-width: 80%;
+          height: 100%;
+          background-color: rgba(255,255,255,0.7);
+          margin: auto;
+          position: relative;
+}
+
+
+
+
+
+/*--header--*/
+header{
+    padding: 20px;
+    height: auto;
+    display: grid;
+    position: relative;
+    text-align: left;
+    grid-template-columns: 70% 30% ;
+    box-sizing: border-box;
+    
+    
+}
+header div .pic{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    position: relative;
+    
+   
+}
+header.personal-info{
+    grid-column: 1/3;
+}
+
+
+
+
+
+
+
+/*--section--*/
+section{
+    padding: 20px;
+    height: 100%;
+    position: relative;
+    display: grid;
+    text-align: left;
+    grid-template-columns: 10% auto;
+    
+}
+
+section .title{
+    grid-column:1/3;
+}
+section .info{
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+/*----- Link------*/
+a{  
+    text-decoration: none;
+    color: black;
+    font-style: italic; 
+}
+a:hover{
+    color: rgb(253, 253, 253);
+    text-decoration: underline;
+}
+a:visited{
+    color: rgb(92, 29, 240);
+}
+
+
+
+
+
+
+
+
+/*----horizontal rool----- */
+hr{ 
+    border: solid black 1px;
+    width: 100%;
+    margin: auto;
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+/*--Footer--*/
+.foot{
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    position:relative;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+footer p{
+    font-size: 10px;
+    font-style: normal;
+}
+footer div{
+    display: inline;
+    padding: 10px;
+    position: relative;
+}
+footer div img{
+       width: 30px;
+       height: 30px;
+       
+       
+}
+footer div img:hover{
+          width:50px;
+          height:50px;
+          transition: width 1s;
+}
+
+
+
+
+
+
+
+/*--shape Annination--*/
+.box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(255,255,255,.8);
+}
+.box div:nth-child(1)
+{
+      top:12%;
+      left: 42%;
+      border-radius: 50%;
+      animation: animate 10s linear infinite;
+}
+.box div:nth-child(2)
+{
+      top: 70%;
+      left: 50%;
+      animation: animate 7s linear infinite;
+}
+.box div:nth-child(3)
+{
+      top:17%;
+      left: 6%;
+      animation: animate 9s linear infinite;
+}
+.box div:nth-child(4)
+{
+      top: 20%;
+      left: 60%;
+      animation: animate 10s linear infinite;
+}
+.box div:nth-child(5)
+{
+      top:67%;
+      left: 10%;
+      border-radius: 50%;
+      animation: animate 6s linear infinite;
+}
+.box div:nth-child(6)
+{
+      top:60%;
+      left: 70%;
+      animation: animate 12s linear infinite;
+}
+.box div:nth-child(7)
+{
+      top:60%;
+      left: 80%;
+      animation: animate 15s linear infinite;
+}
+.box div:nth-child(8)
+{
+      top:32%;
+      left: 25%;
+      animation: animate 16s linear infinite;
+}
+.box div:nth-child(9)
+{
+      top:90%;
+      left: 25%;
+      animation: animate 5s linear infinite;
+}
+.box div:nth-child(10){
+    top:20%;
+    left: 80%;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+}
+.box div:nth-child(11)
+{
+      bottom:12%;
+      right: 42%;
+      border-radius: 50%;
+      animation: animate 10s linear infinite;
+}
+.box div:nth-child(12)
+{
+      bottom: 70%;
+      right: 50%;
+      animation: animate 7s linear infinite;
+}
+.box div:nth-child(13)
+{
+      bottom:17%;
+      right: 6%;
+      animation: animate 9s linear infinite;
+}
+.box div:nth-child(14)
+{
+      bottom: 20%;
+      right: 60%;
+      animation: animate 10s linear infinite;
+}
+.box div:nth-child(15)
+{
+      bottom:67%;
+      right: 10%;
+      border-radius: 50%;
+      animation: animate 6s linear infinite;
+}
+.box div:nth-child(16)
+{
+      bottom:60%;
+      right: 70%;
+      animation: animate 12s linear infinite;
+}
+.box div:nth-child(17)
+{
+      bottom:60%;
+      right: 80%;
+      animation: animate 15s linear infinite;
+}
+.box div:nth-child(18)
+{
+      bottom:32%;
+      right: 25%;
+      animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(19){
+    bottom:20%;
+    right: 80%;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+}
+
+
+/* For Background shape animation */
+@keyframes animate{
+
+    0%{
+        transform: scale(0) translate(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translate(-90px) rotate(360deg);
+        opacity: 0;
+    }
+
+
+}
+
+
+
+/* For Background Color animation */
+@keyframes backcolor{
+    0%{
+        background-color: rgb(18, 16, 46);
+    }
+    25%{
+        background-color: rgb(20, 248, 248);
+    }
+    50%{
+        background-color: rgb(51, 4, 75);
+    }
+    75%{
+        background-color: rgb(4, 101, 133);
+    }
+    100%{
+        background-color: rgb(28, 32, 3);
+    }
+}
+
+
+
+
+
+/* For devices 415px and smaller: */
+@media only screen and (max-device-width: 415px) {
+    header p {
+      font-size: 10px;
+    }
+  }
